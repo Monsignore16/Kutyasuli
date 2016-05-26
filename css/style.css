@@ -62,19 +62,6 @@ header nav a:hover {
   text-decoration: none;
 }
 
-@media (max-width: 992px) {
-  header h1 {
-    text-align: center;
-  }
-
-  header nav a {
-    text-align: center;
-    display: block;
-    margin-left: 0;
-  }
-}
-
-
 .main-image {
   background:  url(../images/dog-playing.png);
   background-size: cover;
@@ -117,6 +104,30 @@ header nav a:hover {
   font-size: 24px;
   font-weight: 700;
 }
+
+@media (max-width: 992px) {
+  header h1 {
+    background-position: top center;
+  }
+
+  header nav a {
+    border: 1px solid rgba(20, 31, 56, 0.25);
+    border-radius: 5px;
+    display: block;
+    margin-left: 0;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .main-image h1 {
+    font-size: 24px;
+  }
+
+  .main-image h2 {
+    font-size: 14px;
+  }
+}
+
 
 
 .help {
