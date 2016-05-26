@@ -128,7 +128,53 @@ header nav a:hover {
   }
 }
 
+footer {
+  background: #141f38;
+  color: #89b5d7;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
 
+footer h3 {
+  font-weight: 700;
+  padding-bottom: 15px;
+}
+
+footer ul {
+  list-style: none;
+  line-height: 1.8;
+}
+
+footer ul li a {
+  color: #89b5d7;
+}
+
+footer ul li a:hover {
+  color: #d97d3c;
+  text-decoration: none;
+}
+
+footer ul li a:active {
+  color: #89b5d7;
+}
+
+footer .mobil {
+  border: 1px solid #d97d3c;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+footer .fa {
+  color: #d97d3c;
+  float: left;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+footer .mobil-number {
+  font-size: 18px;
+  color: #d97d3c;
+}
 
 .help {
   font-size: 20px;
