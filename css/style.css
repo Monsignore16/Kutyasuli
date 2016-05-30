@@ -150,7 +150,7 @@ footer ul li a {
 }
 
 footer ul li a:hover {
-  color: #d97d3c;
+  color: #f4c253;
   text-decoration: none;
 }
 
@@ -158,23 +158,22 @@ footer ul li a:active {
   color: #89b5d7;
 }
 
-footer .mobil {
+footer .mobil-number {
+  color: #d97d3c;
   border: 1px solid #d97d3c;
   border-radius: 5px;
-  padding: 5px;
+  padding: 7px;
+  display: inline-block;
+  margin-top: 40px;
+  float: right;
 }
 
-footer .fa {
-  color: #d97d3c;
-  float: left;
-  margin-left: 5px;
-  margin-right: 5px;
+footer .mobil-number span {
+  font-size: 20px;
+  white-space: nowrap;
+  vertical-align: top;
 }
 
-footer .mobil-number {
-  font-size: 18px;
-  color: #d97d3c;
-}
 
 .help {
   font-size: 20px;
