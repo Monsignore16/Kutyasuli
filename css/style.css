@@ -105,6 +105,28 @@ header nav a:hover {
   font-weight: 700;
 }
 
+.col-xs-5ths,
+.col-sm-5ths,
+.col-md-5ths,
+.col-lg-5ths {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.col-xs-5ths {
+    width: 20%;
+    float: left;
+}
+
+.box-column {
+  background: #89b5d7;
+  padding: 15px;
+  min-height: 490px;
+}
+
+
 footer {
   background: #141f38;
   color: #89b5d7;
@@ -187,8 +209,27 @@ footer .mobil-number span {
     border-bottom: none;
   }
 
-
 }
+
+@media (min-width: 768px) {
+.col-sm-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+@media (min-width: 992px) {
+    .col-md-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+@media (min-width: 1200px) {
+    .col-lg-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+
 
 .help {
   font-size: 20px;
