@@ -95,12 +95,16 @@ header nav a:hover {
 .title {
   color: #244475;
   text-align: center;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.title2 {
+  margin-bottom: 0;
 }
 
 .title h1 {
-  margin: 0;
+  margin: 15px 0 0;
   font-size: 24px;
   font-weight: 700;
 }
@@ -123,9 +127,26 @@ header nav a:hover {
 .box-column {
   background: #89b5d7;
   padding: 15px;
-  min-height: 490px;
+  min-height: 510px;
+  margin-top: 30px;
 }
 
+.box-column h3 {
+  color: #141f38;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.box-column p {
+  color: #fff;
+}
+
+.box-column ol {
+  color: #fff;
+  list-style-position: inside;
+}
 
 footer {
   background: #141f38;
@@ -171,8 +192,14 @@ footer .mobil-number span {
   vertical-align: top;
 }
 
+@media (max-width: 767px) {
+  .box-column {
+    min-height: 0;
+  }
+}
 
-@media (max-width: 992px) {
+
+@media (max-width: 991px) {
   header h1 {
     background-position: top center;
   }
@@ -194,6 +221,10 @@ footer .mobil-number span {
     font-size: 14px;
   }
 
+  .box-column {
+    min-height: 480px;
+  }
+
   footer {
     padding-top: 0;
   }
@@ -211,12 +242,13 @@ footer .mobil-number span {
 
 }
 
-@media (min-width: 768px) {
+
+/*@media (min-width: 768px) {
 .col-sm-5ths {
         width: 20%;
         float: left;
     }
-}
+}*/
 @media (min-width: 992px) {
     .col-md-5ths {
         width: 20%;
@@ -230,8 +262,6 @@ footer .mobil-number span {
     }
 }
 
-
 .help {
-  font-size: 20px;
   text-align: center;
 }
