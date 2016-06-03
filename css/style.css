@@ -62,6 +62,14 @@ header nav a:hover {
   text-decoration: none;
 }
 
+header nav .active  {
+  color: #f4c253;
+  /*background-color: rgba(244,194,83,0.5);*/
+  border: 1px solid #f4c253;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
 .main-image {
   background:  url(../images/dog-playing.png);
   background-size: cover;
@@ -109,6 +117,14 @@ header nav a:hover {
   font-weight: 700;
 }
 
+.title3 h1 {
+  margin: 0;
+}
+
+.pictures-content figure {
+  margin-bottom: 30px;
+}
+
 .col-xs-5ths,
 .col-sm-5ths,
 .col-md-5ths,
@@ -127,7 +143,7 @@ header nav a:hover {
 .box-column {
   background: #89b5d7;
   padding: 15px;
-  min-height: 510px;
+  min-height: 525px;
   margin-top: 30px;
 }
 
@@ -192,9 +208,9 @@ footer .mobil-number span {
   vertical-align: top;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1199px) {
   .box-column {
-    min-height: 0;
+    min-height: 600px;
   }
 }
 
@@ -204,13 +220,19 @@ footer .mobil-number span {
     background-position: top center;
   }
 
+  header nav {
+    text-align: center;
+  }
+
   header nav a {
     border: 1px solid rgba(20, 31, 56, 0.25);
     border-radius: 5px;
-    display: block;
-    margin-left: 0;
-    margin-bottom: 10px;
+    display: inline-block;
     text-align: center;
+  }
+
+  header nav a:first-child {
+    margin-left: 0;
   }
 
   .main-image h1 {
@@ -222,18 +244,18 @@ footer .mobil-number span {
   }
 
   .box-column {
-    min-height: 480px;
+    min-height: 492px;
   }
 
   footer {
     padding-top: 0;
+    text-align: center;
   }
 
   footer h3 {
     padding-bottom: 0;
     padding-top: 15px;
     margin-bottom: 3px;
-    border-bottom: 1px solid #89b5d7;
   }
 
   footer .last h3 {
@@ -242,6 +264,20 @@ footer .mobil-number span {
 
 }
 
+@media (max-width: 767px) {
+  header nav a {
+    border: 1px solid rgba(20, 31, 56, 0.25);
+    border-radius: 5px;
+    display: block;
+    margin-left: 0;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .box-column {
+    min-height: 0;
+  }
+}
 
 /*@media (min-width: 768px) {
 .col-sm-5ths {
