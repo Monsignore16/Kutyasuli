@@ -20,7 +20,6 @@ a {
   text-decoration: none;
 }
 
-
 header {
   background: #89b5d7;
   padding-top: 15px;
@@ -29,7 +28,7 @@ header {
 
 header h1 {
   background-image: url(../images/logo.png);
-  background-size: contain;
+  /*background-size: contain;*/
   background-repeat: no-repeat;
   background-position: top left;
   margin: 0;
@@ -63,9 +62,9 @@ header nav a:hover {
 }
 
 header nav .active  {
-  color: #f4c253;
-  /*background-color: rgba(244,194,83,0.5);*/
-  border: 1px solid #f4c253;
+  color: #244475;
+  background-color: rgba(255,255,255,0.3);
+  border: 1px solid #89b5d7;
   border-radius: 5px;
   text-decoration: none;
 }
@@ -73,6 +72,7 @@ header nav .active  {
 .main-image {
   background:  url(../images/dog-playing.png);
   background-size: cover;
+  background-position: top center;
   color: #fff;
   text-align: center;
   padding-top: 30px;
@@ -84,13 +84,13 @@ header nav .active  {
   font-weight: 700;
   margin-top: 0;
   text-transform: uppercase;
-  text-shadow: 1px 1px 0 black;
+  text-shadow: 1px 1px 0 #141f38;
 }
 
 .main-image h2 {
   font-size: 18px;
   font-weight: 700;
-  text-shadow: 1px 1px 0 black;
+  text-shadow: 1px 1px 0 #141f38;
 }
 
 .blue-box {
@@ -164,6 +164,24 @@ header nav .active  {
   list-style-position: inside;
 }
 
+.news article {
+  margin-bottom: 20px;
+}
+
+.news article time {
+  background-color: #244475;
+  color: #fff;
+  font-size: 12px;
+  padding: 2px 5px;
+}
+
+.news article ul {
+  margin-top: 3px;
+  list-style-type: decimal;
+  color: #244475;
+  margin-left: 15px;
+}
+
 footer {
   background: #141f38;
   color: #89b5d7;
@@ -190,8 +208,9 @@ footer ul li a:hover {
   text-decoration: none;
 }
 
-footer ul li a:active {
-  color: #89b5d7;
+footer ul li a:focus {
+  color: #1773bb;
+  text-decoration: none;
 }
 
 footer .mobil-number {
@@ -207,6 +226,7 @@ footer .mobil-number span {
   white-space: nowrap;
   vertical-align: top;
 }
+
 
 @media (max-width: 1199px) {
   .box-column {
@@ -247,9 +267,15 @@ footer .mobil-number span {
     min-height: 492px;
   }
 
+  .clear {
+    clear: left;
+  }
+
+
+
   footer {
     padding-top: 0;
-    text-align: center;
+    text-align: left;
   }
 
   footer h3 {
@@ -257,11 +283,6 @@ footer .mobil-number span {
     padding-top: 15px;
     margin-bottom: 3px;
   }
-
-  footer .last h3 {
-    border-bottom: none;
-  }
-
 }
 
 @media (max-width: 767px) {
@@ -277,14 +298,28 @@ footer .mobil-number span {
   .box-column {
     min-height: 0;
   }
+
+  footer {
+    padding-top: 0;
+    text-align: center;
+  }
+
 }
 
-/*@media (min-width: 768px) {
-.col-sm-5ths {
-        width: 20%;
-        float: left;
-    }
-}*/
+@media (max-width: 439px) {
+  header h1 {
+    background-image: url(../images/logo_small.png);
+    /*background-size: contain;*/
+    background-repeat: no-repeat;
+    background-position: top center;
+    margin: 0;
+    padding-bottom: 14px;
+    overflow: hidden;
+    text-indent: 110%;
+    white-space: nowrap;
+  }
+}
+
 @media (min-width: 992px) {
     .col-md-5ths {
         width: 20%;
@@ -296,8 +331,4 @@ footer .mobil-number span {
         width: 20%;
         float: left;
     }
-}
-
-.help {
-  text-align: center;
 }
